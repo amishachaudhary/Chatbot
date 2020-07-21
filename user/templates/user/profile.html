@@ -1,0 +1,16 @@
+{% extends "travel_app/base.html" %}
+{% block content %}
+    <div class="container border mt-4" >
+        <div class="media">
+            <img class="rounded-circle account-img mt-4" src="{{ user.profile.image.url }}" style="width: 100px; height: 100px;">
+            <div class="media-body ml-5 p-4">
+                <h3 class="account-name">Name: {{ user.profile.name }}</h3>
+                <h5 class="account-heading">Username: {{ user.username }}</h5> 
+                <p class="text-secondary">Email: {{ user.email }}</p>
+            </div>
+        </div>
+        <div class="update mb-4">
+            <button class="btn btn-outline-secondary p-1">Update Profile</button>
+        </div>
+    </div>
+{% endblock content %}
