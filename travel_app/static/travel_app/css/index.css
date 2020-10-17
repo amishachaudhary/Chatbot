@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', cursive;
+}
+body{
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color: rgb(73, 59, 59);
+	color:whitesmoke;
+	border-radius:50px;
+	text-align:center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 2;
+}
+
+.navbar-brand, .left-col h1{
+  font-family: 'Gaegu', cursive;
+}
+
+.my-float{
+  margin-top:15px;
+  font-size: 30px;
+}
+
+.main-image{
+  background-image: url(../img/landscape.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 900px;
+  opacity: 0.7;
+}
+
+.center{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center h1{
+  color: black;
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+}
+
+.center h2{
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+}
+
+.popular-places{
+  margin-top: 20px;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.popular-places .ptitle h1{
+  font-family: 'Caveat', cursive;
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.popular-places .underline{
+  margin-top: 10px;
+  background-color: teal;
+  width: 100px;
+  margin-left: 45%;
+  height: 7px;
+  border-radius: 25px;
+}
+.cards{
+  display: inline-block;
+  width: 30%;
+  border-radius: 5px;
+  margin: 50px 20px 0 20px;
+  box-shadow: 2px 2px 10px black;
+}
+
+.image img{
+  width: 100%;
+  height: 200px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.title, .desc{
+  text-align: center;
+  color: black;
+  padding: 10px;
+}
+
+.desc button{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 10px;
+  color: black;
+  outline: none;
+}
+.desc button:hover{
+  background-color: #333333;
+  color: #fff;
+  transition: .5s;
+}
+footer {
+  background: #333333;
+  padding: 90px 0;
+  color: white;
+  margin-top: 20px;
+}
+.footer-container{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+.socail_links{
+  margin-left: 20px 0;
+}
+
+.social_links a{
+  color: white;
+  margin-right: 25px;
+  font-size: 22px;
+  text-decoration: none;
+  transition: .3s linear;
+}
+
+.social_links a:hover{
+  color: gray;
+}
+.right-text{
+  margin-top: 10px;
+}
+.right-col h1{
+  font-size: 26px;
+}
+
+.newsletter-forms{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.txtbtn{
+  flex: 1;
+  padding: 18px 40px;
+  font-size: 16px;
+  color: #293043;
+  background: #ddd;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 30px;
+  min-width: 260px;
+}
+
+.sbtn{
+  padding: 18px 40px;
+  font-size: 16px;
+  color: #293043;
+  background: #ddd;
+  border: none;
+  font-weight: 700;
+  border-radius: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: opacity .3s linear;
+}
+
+.sbtn:hover{
+  opacity: .7;
+}
+
+@media only screen and (max-width:960px){
+  .center{
+    top: 80%;
+  }
+  .center h2{
+    font-size: 25px;
+  }
+
+  .popular-places{
+    width: 100%;
+  }
+  .cards{
+    width: 40%;
+    margin: 50px 10px 0 10px;
+  }
+
+  .title h1{
+    font-size: 25px;
+  }
+
+  .footer-container{
+    max-width: 600px;
+  }
+  .right-col{
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .left-col{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width:700px){
+  .center h1{
+    font-size: 40px;
+  }
+  .sbtn{
+    margin: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .textbtn{
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.media .account-img{
+  width: 50px;
+  height: 50px;
+}
