@@ -8,7 +8,7 @@ from .models import Hotel
 def hotel(request):
     context = {
         'hotels': Hotel.objects.all(),
-        'title': 'Hotels'
+        'title': 'Hotel'
     }
     return render(request, 'hotels.html', context)
 
