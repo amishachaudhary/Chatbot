@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'hotel_app.apps.HotelAppConfig',
+    'paypal.standard.ipn',
 ]
 
 MIDDLEWARE = [
@@ -130,3 +131,8 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'home'
 LOGIN_URL = 'login'
+
+# paypal payment settings
+
+PAYPAL_RECIEVER_EMAIL = 'angelamishachy@gmail.com'
+PAYPAL_TEST = True
